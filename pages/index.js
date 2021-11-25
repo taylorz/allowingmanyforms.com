@@ -3,6 +3,7 @@ import Head from 'next/head'
 import {
   PageContainer,
   MaxWidth,
+  Text,
   Grid
 } from '../components/ui'
 
@@ -23,7 +24,7 @@ export default function Home() {
         <MaxWidth>
           <Grid container>
             <Grid item>
-              AMF
+              <Text>AMF</Text>
             </Grid>
           </Grid>
         </MaxWidth>

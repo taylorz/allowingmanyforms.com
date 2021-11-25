@@ -35,7 +35,7 @@ export const theme = {
     },
     size: {
       body: {
-        regular: 14
+        regular: 16
       },
       title: {
         regular: 24
