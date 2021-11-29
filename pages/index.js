@@ -13,18 +13,18 @@ export default function Home() {
       <Head>
         <title>AMF</title>
         <meta name="title" content="AMF" />
-        <meta property="og:site_name" content="AMF" key="og_fp_site_name" />
+        <meta property="og:site_name" content="AMF" key="og_amf_site_name" />
         <meta name="description" content="AMF" />
-        <meta name="keywords" content="Architecture, Urbanism, Housing, Labor, Design, Graphic Design, Print" />
-        <meta property="og:title" content="AMF" key="og_fp_site_title" />
-        <meta property="og:description" content="AMF" key="og_fp_site_description" />
+        <meta name="keywords" content="Architecture, Urbanism, Housing, Labor, Design, Graphic Design, Printing" />
+        <meta property="og:title" content="AMF" key="og_amf_site_title" />
+        <meta property="og:description" content="AMF" key="og_amf_site_description" />
       </Head>
 
       <PageContainer>
         <MaxWidth>
           <Grid container>
-            <Grid item>
-              <Text>AMF</Text>
+            <Grid item xs={12} sm={6}>
+              <Text title>AMF</Text>
             </Grid>
           </Grid>
         </MaxWidth>

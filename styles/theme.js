@@ -46,7 +46,7 @@ export const theme = {
         regular: 20
       },
       title: {
-        regular: 32
+        regular: 30
       },
     }
   }
@@ -67,8 +67,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: ${props => props.theme.text.family.regular};
-    color: ${props => props.theme.text.color};
   }
   * {
     box-sizing: border-box;
@@ -76,10 +74,10 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     cursor: pointer;
-    font-family: ${({ theme }) => theme.text.family.regular};
     text-decoration: none;
     &:hover {
       cursor: pointer;
     }
   }
 `;
+

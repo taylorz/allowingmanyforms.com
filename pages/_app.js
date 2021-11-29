@@ -21,17 +21,19 @@ function App({ Component, pageProps }) {
       <GlobalStyle />
 
       <AnimatePresence exitBeforeEnter>
-          <motion.div
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
-            transition={{duration: 2}}
-          >
-            <Layout>
-              <Component key={router.pathname} {...pageProps} />
-            </Layout>
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          exit={{opacity: 0}}
+          transition={{duration: 1}}
+        >
+
+          <Layout>
+            <Component key={router.pathname} {...pageProps} />
+          </Layout>
+
+        </motion.div>
+      </AnimatePresence>
 
 
     </ThemeProvider>
