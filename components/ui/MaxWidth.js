@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const StyledMaxwidth = styled.div`
   max-width: ${({ theme }) => theme.breakpoint.md}px;
@@ -6,11 +6,7 @@ const StyledMaxwidth = styled.div`
 `;
 
 const MaxWidth = ({ children }) => {
-  return (
-    <StyledMaxwidth>
-      {children}
-    </StyledMaxwidth>
-  )
-}
+  return <StyledMaxwidth>{children}</StyledMaxwidth>;
+};
 
-export default MaxWidth
+export default MaxWidth;

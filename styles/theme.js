@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const buffer = 4;
-const timing = '.25s';
-const easing = 'ease-in-out';
+const timing = ".25s";
+const easing = "ease-in-out";
 
 export const theme = {
   util: {
@@ -14,43 +14,43 @@ export const theme = {
     xs: 640,
     sm: 768,
     md: 1024,
-    lg: 1440
+    lg: 1440,
   },
   color: {
     text: {
-      dark: '#22222A',
-    }
+      dark: "#22222A",
+    },
   },
   text: {
     family: {
-      regular: 'Helvetica Neue, Helvetica, sans-serif'
+      regular: "Helvetica Neue, Helvetica, sans-serif",
     },
     weight: {
       body: {
         regular: 400,
       },
       title: {
-        regular: 400
-      }
+        regular: 400,
+      },
     },
     size: {
       body: {
-        regular: 16
+        regular: 18,
       },
       title: {
-        regular: 24
-      }
+        regular: 26,
+      },
     },
     lineHeight: {
       body: {
-        regular: 20
+        regular: 22,
       },
       title: {
-        regular: 30
+        regular: 32,
       },
-    }
-  }
-}
+    },
+  },
+};
 
 // Global styles:
 export const GlobalStyle = createGlobalStyle`
@@ -80,4 +80,3 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 `;
-
