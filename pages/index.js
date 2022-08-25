@@ -33,18 +33,9 @@ export default function Home() {
       <PageContainer>
         <MaxWidth>
           <Grid container>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={4}>
               <Text>Allowing Many Forms</Text>
             </Grid>
-            {/* <Grid item xs={12} sm={6}>
-              <Text>
-                Allowing Many Forms is a Los Angeles based design and publishing
-                practice interested in working in close collaboration with
-                artists, designers, and creative organizations to create unique
-                physical works that communicate, define, and present ideas,
-                stories, and values.
-              </Text>
-            </Grid> */}
           </Grid>
         </MaxWidth>
       </PageContainer>

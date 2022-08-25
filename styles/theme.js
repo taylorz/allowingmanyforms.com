@@ -1,4 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+import fannGrotesqueRegularWoff from "../public/assets/fonts/fann-grotesque/regular/fann-grotesque-regular-pro.woff";
+import fannGrotesqueRegularWoff2 from "../public/assets/fonts/fann-grotesque/regular/fann-grotesque-regular-pro.woff2";
+import fannGrotesqueRegularEot from "../public/assets/fonts/fann-grotesque/regular/fann-grotesque-regular-pro.eot";
+import fannGrotesqueSemiboldWoff from "../public/assets/fonts/fann-grotesque/semibold/fann-grotesque-semibold-pro.woff";
+import fannGrotesqueSemiboldWoff2 from "../public/assets/fonts/fann-grotesque/semibold/fann-grotesque-semibold-pro.woff2";
+import fannGrotesqueSemiboldEot from "../public/assets/fonts/fann-grotesque/semibold/fann-grotesque-semibold-pro.eot";
 
 const buffer = 4;
 const timing = ".25s";
@@ -23,7 +29,7 @@ export const theme = {
   },
   text: {
     family: {
-      regular: "Helvetica Neue, Helvetica, sans-serif",
+      regular: "Fann Grotesque Regular, Helvetica Neue, Helvetica, sans-serif",
     },
     weight: {
       body: {
@@ -54,6 +60,23 @@ export const theme = {
 
 // Global styles:
 export const GlobalStyle = createGlobalStyle`
+
+@font-face {
+      font-family: 'Fann Grotesque Regular';
+      font-display: block; /* No longer causing FOUT */
+      src: local('Fann Grotesque Regular'), local('fannGrotesqueRegular'),
+      url(${fannGrotesqueRegularEot}) format('eot'),
+      url(${fannGrotesqueRegularWoff2}) format('woff2'),
+      url(${fannGrotesqueRegularWoff}) format('woff');
+  }
+  @font-face {
+      font-family: 'Fann Grotesque Semibold';
+      font-display: block; /* No longer causing FOUT */
+      src: local('Fann Grotesque Semibold'), local('fannGrotesqueSemibold'),
+      url(${fannGrotesqueSemiboldEot}) format('eot'),
+      url(${fannGrotesqueSemiboldWoff2}) format('woff2'),
+      url(${fannGrotesqueSemiboldWoff}) format('woff');
+  }
 
   body, html {
     margin: 0 !important;
