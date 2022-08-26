@@ -61,7 +61,7 @@ export const theme = {
 // Global styles:
 export const GlobalStyle = createGlobalStyle`
 
-@font-face {
+  @font-face {
       font-family: 'Fann Grotesque Regular';
       font-display: block; /* No longer causing FOUT */
       src: local('Fann Grotesque Regular'), local('fannGrotesqueRegular'),
