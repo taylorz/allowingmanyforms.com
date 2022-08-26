@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import Div100vh from 'react-div-100vh'
+import styled from "styled-components";
+import Div100vh from "react-div-100vh";
 
 const StyledPageContainer = styled(Div100vh)`
   height: 100vh;
@@ -11,9 +11,7 @@ const StyledPageContainer = styled(Div100vh)`
 `;
 
 const PageContainer = ({ children }) => {
-  return (
-    <StyledPageContainer>{children}</StyledPageContainer>
-  )
-}
+  return <StyledPageContainer>{children}</StyledPageContainer>;
+};
 
-export default PageContainer
+export default PageContainer;
